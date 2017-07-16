@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             R.id.imvShowPic3, R.id.imvShowPic4};
     private Uri uri;
     private ArrayList<String> stringArrayList;
+    private String[] pathImageStrings;
 
 
     @Override
@@ -152,11 +153,36 @@ public class MainActivity extends AppCompatActivity {
                     getString(R.string.message_have_space));
         } else {
             //No Space
+            createArrayFromArrayList();
+
+
+
         }
 
 
 
     }   // clickSave
+
+    private void createArrayFromArrayList() {
+
+        String tag = "16JulyV2";
+        Log.d(tag, "arrayList.size ==> " + stringArrayList.size());
+
+        if (stringArrayList.size() != 0) {
+            //Have Image
+            pathImageStrings = new String[stringArrayList.size()];
+            pathImageStrings = stringArrayList.toArray(new String[0]);
+
+            for (int i=0;i<pathImageStrings.length;i+=1) {
+                Log.d(tag, "pathImage[" + i + "] ==> " + pathImageStrings[i]);
+            }
+
+        }
+
+
+
+
+    }   // createArray
 
     private void backController() {
         ImageView imageView = (ImageView) findViewById(R.id.imvBack);
