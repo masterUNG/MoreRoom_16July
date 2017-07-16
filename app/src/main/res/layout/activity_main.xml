@@ -38,11 +38,11 @@
 
             <!--save-->
             <ImageView
-                android:onClick="clickSave"
                 android:id="@+id/imvSaveTop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:onClick="clickSave"
                 android:src="@mipmap/ic_save" />
 
 
@@ -53,10 +53,10 @@
 
     <!--Content-->
     <ScrollView
-        android:layout_above="@+id/relBotton"
-        android:layout_below="@+id/tolTop"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relBotton"
+        android:layout_below="@+id/tolTop">
 
         <LinearLayout
 
@@ -162,6 +162,33 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imvShowPic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imvShowPic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imvShowPic3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imvShowPic4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <!--ImageView Add-->
+                <ImageView
+                    android:id="@+id/imvadd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/ic_add_image" />
@@ -399,7 +426,6 @@
                     android:orientation="vertical">
 
 
-
                 </LinearLayout>
 
 
@@ -407,9 +433,9 @@
 
             <!--Admin-->
             <LinearLayout
-                android:gravity="center_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -419,12 +445,11 @@
 
 
                 <TextView
-                    android:text="@string/test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/h2"
+                    android:text="@string/test"
                     android:textColor="@color/colorPrimaryDark"
-                     />
+                    android:textSize="@dimen/h2" />
 
 
             </LinearLayout>
@@ -437,27 +462,27 @@
 
     <!--Botton Toolbar-->
     <RelativeLayout
-        android:layout_alignParentBottom="true"
         android:id="@+id/relBotton"
-        android:background="@color/colorPrimary"
-        android:padding="@dimen/padding"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding">
 
 
         <!--Save-->
         <LinearLayout
-            android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <ImageView
-                android:onClick="clickSave"
                 android:id="@+id/imvSaveBottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="clickSave"
                 android:src="@mipmap/ic_save" />
 
             <TextView
