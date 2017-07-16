@@ -38,6 +38,7 @@
 
             <!--save-->
             <ImageView
+                android:onClick="clickSave"
                 android:id="@+id/imvSaveTop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,6 +87,7 @@
 
 
                 <EditText
+                    android:id="@+id/edtName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/name"
@@ -109,6 +111,7 @@
 
 
                 <EditText
+                    android:id="@+id/edtPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/price"
@@ -132,6 +135,7 @@
 
 
                 <EditText
+                    android:id="@+id/edtPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Phone"
@@ -450,6 +454,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:onClick="clickSave"
                 android:id="@+id/imvSaveBottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
