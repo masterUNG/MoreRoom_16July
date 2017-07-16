@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">More Room</string>
+    <string name="title_activity_first">Map</string>
+    <string name="add_room">Add Room</string>
+    <string name="name">Name</string>
+    <string name="price">price</string>
+    <string name="test">ห้องว่าง x ห้อง</string>
+</resources>
